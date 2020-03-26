@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:math="http://www.w3.org/1998/Math/MathML"
+  xmlns:svg="http://www.w3.org/2000/svg" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Title</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>Publication Information</p>
+      </publicationStmt>
+      <sourceDesc default="false">
+
+        <msDesc>
+          <msIdentifier></msIdentifier>
+        </msDesc>
+
+        <!-- ########## Lista Persone ########## -->
+
+        <listPerson>
+
+          <person xml:id="N">
+            <persName>
+              <forename></forename>
+              <surname></surname>
+            </persName>
+            <sex></sex>
+            <occupation n="1"></occupation>
+            <note></note>
+          </person>
+
+        </listPerson>
+
+
+        <!-- ########## Lista dei luoghi ########## -->
+
+        <listPlace>
+
+
+          <place xml:id="A">
+            <settlement type="località"></settlement>
+          </place>
+
+
+        </listPlace>
+
+
+
+        <!-- ########## Lista Enti (abbatia, capella, cella, diocesis, ecclesia, hopitalis, monasterium)   ########## -->
+        <listOrg>
+          <head>Istituti religiosi</head>
+          <org xml:id="">
+            <orgName type=""></orgName>
+            <desc></desc>
+          </org>
+
+        </listOrg>
+
+
+      </sourceDesc>
+    </fileDesc>
+
+    <encodingDesc>
+      <projectDesc>
+        <p/>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="unknown" method="silent">
+          <p/>
+        </correction>
+        <normalization method="silent">
+          <p/>
+        </normalization>
+        <segmentation>
+          <p/>
+        </segmentation>
+        <hyphenation eol="all">
+          <p>Physical line breaks are rigidly observed.</p>
+        </hyphenation>
+      </editorialDecl>
+
+      <charDecl>
+
+        <!-- ######################################################################## -->
+        <!-- NB: è INDISPENSABILE usare il font Junicode per visualizzare i caratteri -->
+        <!-- ######################################################################## -->
+
+        <char xml:id="xxx">
+          <charName></charName>
+          <mapping type="codepoint" subtype="MUFI-PUA">U+</mapping>
+          <mapping type="diplomatic"></mapping>
+          <mapping type="normalized"></mapping>
+        </char>
+
+        <!-- regular letters -->
+
+        <char xml:id="ucap">
+          <charName>LATIN CAPITAL LETTER U</charName>
+          <mapping type="codepoint">U+0055</mapping>
+          <mapping type="diplomatic">U</mapping>
+          <mapping type="normalized">U</mapping>
+        </char>
+
+        <char xml:id="vcap">
+          <charName>LATIN CAPITAL LETTER V</charName>
+          <mapping type="codepoint">U+0056</mapping>
+          <mapping type="diplomatic">V</mapping>
+          <mapping type="normalized">V</mapping>
+        </char>
+
+        <char xml:id="u">
+          <charName>LATIN SMALL LETTER U</charName>
+          <mapping type="codepoint">U+0075</mapping>
+          <mapping type="diplomatic">u</mapping>
+          <mapping type="normalized">u</mapping>
+        </char>
+
+        <char xml:id="v">
+          <charName>LATIN SMALL LETTER V</charName>
+          <mapping type="codepoint">U+0076</mapping>
+          <mapping type="diplomatic">v</mapping>
+          <mapping type="normalized">v</mapping>
+        </char>
+
+        <char xml:id="esh">
+          <charName>LATIN SMALL LETTER ESH</charName>
+          <mapping type="codepoint">U+0283</mapping>
+          <mapping type="diplomatic">ʃ</mapping>
+          <mapping type="normalized">s</mapping>
+        </char>       <!-- QUESTO O sins; per il carattere di folio 1, riga 7 al fondo -->
+
+        <char xml:id="slong">
+          <charName>LATIN SMALL LETTER LONG S</charName>
+          <mapping type="codepoint">U+017F</mapping>
+          <mapping type="diplomatic">ſ</mapping>
+          <mapping type="normalized">s</mapping>
+        </char>
+
+
+        <char xml:id="romnumsix">
+          <charName>ROMAN NUMERAL SIX LATE FORM</charName>
+          <mapping subtype="MUFI-PUA" type="codepoint">U+EEFD</mapping>
+          <mapping type="diplomatic">ↅ</mapping>
+          <mapping type="normalized">VI</mapping>
+        </char>
+
+        <!-- variant forms -->
+
+        <char xml:id="amacr">
+          <charName>LATIN SMALL LETTER A WITH MACRON</charName>
+          <mapping type="codepoint">U+0101</mapping>
+          <mapping type="diplomatic">ā</mapping>
+          <mapping type="normalized">a</mapping>
+        </char>
+        <char xml:id="emacr">
+          <charName>LATIN SMALL LETTER E WITH MACRON</charName>
+          <mapping type="codepoint">U+0113</mapping>
+          <mapping type="diplomatic">ē</mapping>
+          <mapping type="normalized">e</mapping>
+        </char>
+        <char xml:id="imacr">
+          <charName>LATIN SMALL LETTER I WITH MACRON</charName>
+          <mapping type="codepoint">U+012B</mapping>
+          <mapping type="diplomatic">ī</mapping>
+          <mapping type="normalized">i</mapping>
+        </char>
+        <char xml:id="omacr">
+          <charName>LATIN SMALL LETTER O WITH MACRON</charName>
+          <mapping type="codepoint">U+014D</mapping>
+          <mapping type="diplomatic">ō</mapping>
+          <mapping type="normalized">o</mapping>
+        </char>
+        <char xml:id="umacr">
+          <charName>LATIN SMALL LETTER U WITH MACRON</charName>
+          <mapping type="codepoint">U+016B</mapping>
+          <mapping type="diplomatic">ū</mapping>
+          <mapping type="normalized">u</mapping>
+        </char>
+        <char xml:id="ymacr">
+          <charName>LATIN SMALL LETTER Y WITH MACRON</charName>
+          <mapping type="codepoint">U+0233</mapping>
+          <mapping type="diplomatic">ȳ</mapping>
+          <mapping type="normalized">y</mapping>
+        </char>
+
+        <char xml:id="atilde">
+          <charName>LATIN SMALL LETTER A WITH TILDE</charName>
+          <mapping type="codepoint">U+00E3</mapping>
+          <mapping type="diplomatic">ã</mapping>
+          <mapping type="normalized">a</mapping>
+        </char>
+
+
+        <char xml:id="otilde">
+          <charName>LATIN SMALL LETTER O WITH TILDE</charName>
+          <mapping type="codepoint">U+00F5</mapping>
+          <mapping type="diplomatic">õ</mapping>
+          <mapping type="normalized">o</mapping>
+        </char>
+
+        <char xml:id="utilde">
+          <charName>LATIN SMALL LETTER U WITH TILDE</charName>
+          <mapping type="codepoint">U+0169</mapping>
+          <mapping type="diplomatic">ũ</mapping>
+          <mapping type="normalized">u</mapping>
+        </char>
+
+        <char xml:id="uosup">
+          <charName>LATIN SMALL LETTER U WITH LATIN SMALL LETTER O ABOVE</charName>
+          <mapping type="codepoint" subtype="MUFI-PUA">U+E72D</mapping>
+          <mapping type="diplomatic"></mapping>
+          <mapping type="normalized">u</mapping>
+        </char>
+
+        <char xml:id="bstrok">
+          <charName>LATIN SMALL LETTER B WITH STROKE</charName>
+          <mapping type="codepoint">U+0180</mapping>
+          <mapping type="diplomatic">ƀ</mapping>
+          <mapping type="normalized">b</mapping>
+        </char>
+
+
+
+        <char xml:id="cdot">
+          <charName>LATIN SMALL LETTER C WITH DOT ABOVE</charName>
+          <mapping type="codepoint">U+010B</mapping>
+          <mapping type="diplomatic">ċ</mapping>
+          <mapping type="normalized">c</mapping>
+        </char>
+
+        <char xml:id="cdotbl">
+          <charName>LATIN SMALL LETTER C WITH DOT BELOW</charName>
+          <mapping type="codepoint" subtype="MUFI-PUA">U+E466</mapping>
+          <mapping type="diplomatic"></mapping>
+          <mapping type="normalized">c</mapping>
+        </char>
+
+        <char xml:id="ntilde">
+          <charName>LATIN SMALL LETTER N WITH TILDE</charName>
+          <mapping type="codepoint">U+00F1</mapping>
+          <mapping type="diplomatic">ñ</mapping>
+          <mapping type="normalized">n</mapping>
+        </char>
+
+        <char xml:id="lbar">
+          <charName>LATIN SMALL LETTER L WITH BAR</charName>
+          <mapping type="codepoint">U+019A</mapping>
+          <mapping type="diplomatic">ƚ</mapping>
+          <mapping type="normalized">l</mapping>
+        </char>
+
+        <char xml:id="lstrok">
+          <charName>LATIN SMALL LETTER L WITH STROKE</charName>
+          <mapping type="codepoint">U+0142</mapping>
+          <mapping type="diplomatic">ł</mapping>
+          <mapping type="normalized">l</mapping>
+        </char>
+
+        <char xml:id="ltailstrok">
+          <charName>LATIN SMALL LETTER LUM</charName>
+          <mapping type="codepoint">U+A772</mapping>
+          <mapping type="diplomatic">ꝲ</mapping>
+          <mapping type="normalized">l</mapping>
+        </char>
+
+        <char xml:id="pbardes">
+          <charName>LATIN SMALL LETTER P WITH STROKE THROUGH DESCENDER</charName>
+          <mapping type="codepoint">U+A751</mapping>
+          <mapping type="diplomatic">ꝑ</mapping>
+          <mapping type="normalized">p</mapping>
+        </char>
+
+        <char xml:id="pflour">
+          <charName>LATIN SMALL LETTER P WITH FLOURISH</charName>
+          <mapping type="codepoint">U+A753</mapping>
+          <mapping type="diplomatic">ꝓ</mapping>
+          <mapping type="normalized">p</mapping>
+        </char>
+
+        <char xml:id="q2app">
+          <charName>LATIN SMALL LETTER Q WITH LIGATED WITH R ROTUNDA</charName>
+          <mapping type="codepoint" subtype="MUFI-PUA">U+E8B3</mapping>
+          <mapping type="diplomatic"></mapping>
+          <mapping type="normalized">q</mapping>
+        </char>
+
+        <char xml:id="qbardes">
+          <charName>LATIN SMALL LETTER Q WITH STROKE THROUGH DESCENDER</charName>
+          <mapping type="codepoint">U+A757</mapping>
+          <mapping type="diplomatic">ꝗ</mapping>
+          <mapping type="normalized">q</mapping>
+        </char>
+
+        <char xml:id="qslstrok">
+          <charName>LATIN SMALL LETTER Q WITH DIAGONAL STROKE</charName>
+          <mapping type="codepoint">U+A759</mapping>
+          <mapping type="diplomatic">ꝙ</mapping>
+          <mapping type="normalized">q</mapping>
+        </char>
+
+
+        <char xml:id="qslstroktilde">
+          <charName>LATIN SMALL LETTER Q WITH DIAGONAL STROKE AND TILDE</charName>
+          <mapping type="codepoint" subtype="composed">U+A759 + U+0303</mapping>
+          <mapping type="diplomatic">ꝙ̃</mapping>
+        </char>
+
+
+        <char xml:id="slongbarslash">
+          <charName>LATIN SMALL LETTER LONG S WITH DIAGONAL STROKE</charName>
+          <mapping type="codepoint">U+1E9C</mapping>
+          <mapping type="diplomatic">ẜ</mapping>
+          <mapping type="normalized">s</mapping>
+        </char>
+
+        <!-- LIGATURES -->
+
+
+        <char xml:id="ijlig">
+          <charName>LATIN SMALL LIGATURE IJ</charName>
+          <mapping subtype="MUFI-PUA" type="ligature">U+0132</mapping>
+          <mapping type="normalized">ij</mapping>
+        </char>
+
+        <glyph xml:id="ppflourlig">
+          <glyphName>LATIN SMALL LIGATURE PP WITH FLOURISH</glyphName>
+          <mapping subtype="MUFI-PUA" type="ligature">U+EED7</mapping>
+          <mapping type="diplomatic"></mapping>
+          <mapping type="normalized">pro</mapping>
+        </glyph>
+
+        <char xml:id="q3app">
+          <charName>LATIN SMALL LETTER Q LIGATED WITH FINAL ET</charName>
+          <mapping subtype="MUFI-PUA" type="ligature">U+E8BF</mapping>
+          <mapping type="diplomatic"></mapping>
+          <mapping type="normalized">q</mapping>
+        </char>
+
+        <glyph xml:id="uslig">
+          <glyphName>LATIN SMALL LIGATURE US</glyphName>
+          <mapping type="ligature" subtype="composed">U+0075 + U+017F</mapping>
+          <mapping type="diplomatic">us</mapping>
+          <mapping type="normalized">us</mapping>
+        </glyph>
+
+        <!-- ABBREVIATIONS -->
+
+    <!--
+            <char xml:id="amp">
+              <charName>AMPERSAND</charName>
+              <mapping type="codepoint">U+0026</mapping>
+              <mapping type="diplomatic"></mapping>
+            </char>
+    -->
+
+        <char xml:id="asup">
+         <charName>COMBINING LATIN SMALL LETTER A</charName>
+          <mapping type="codepoint">U+0363</mapping>
+          <mapping type="diplomatic">ͣ</mapping>
+        </char>
+
+
+        <char xml:id="condes">
+          <charName>LATIN SMALL LETTER CON</charName>
+          <mapping type="codepoint">U+A76F</mapping>
+          <mapping type="diplomatic">ꝯ</mapping>
+        </char>
+
+       <char xml:id="combhook">
+         <charName>COMBINING HOOK ABOVE</charName>
+         <mapping type="codepoint">U+0309</mapping>
+         <mapping type="diplomatic">̉</mapping>
+       </char>
+
+        <char xml:id="ercurl">
+          <charName>COMBINING ABBREVIATION MARK ZIGZAG ABOVE CURLY FORM</charName>
+          <mapping type="codepoint" subtype="MUFI-PUA">F1C8</mapping>
+          <mapping type="diplomatic">◌</mapping>
+        </char>                     <!-- NB: fatto per semplificare i caratteri #ercurl; Se lo si sostituiamo con &combhook; va meglio ancora -->
+
+        <char xml:id="et">
+          <charName>LATIN ABBREVIATION SIGN SMALL ET</charName>
+          <mapping type="codepoint">U+204A</mapping>
+          <mapping type="diplomatic">⁊</mapping>
+        </char>
+
+        <char xml:id="etfin">
+          <charName>LATIN SMALL LETTER ET</charName>
+          <mapping type="codepoint">U+A76B</mapping>
+          <mapping type="diplomatic">ꝫ</mapping>
+        </char>
+
+        <char xml:id="rrotsup">
+          <charName>COMBINING LATIN SMALL LETTER R ROTUNDA</charName>
+          <mapping type="codepoint">U+1DE3</mapping>
+          <mapping type="diplomatic">ᷣ</mapping>
+        </char>
+
+
+        <char xml:id="rum">
+          <charName>LATIN SMALL LETTER RUM ROTUNDA</charName>
+          <mapping type="codepoint">U+A75D</mapping>
+          <mapping type="diplomatic">ꝝ</mapping>
+        </char>
+
+
+        <char xml:id="usbase">
+          <charName>LATIN ABBREVIATION SIGN SPACING BASE-LINE US</charName>
+          <mapping type="codepoint" subtype="MUFI-PUA">F1A6</mapping>
+          <mapping type="diplomatic"></mapping>
+        </char>
+
+        <char xml:id="usmod">
+          <charName>MODIFIER LETTER US</charName>
+          <mapping type="codepoint">U+A770</mapping>
+          <mapping type="diplomatic">ꝰ</mapping>
+          <!--<mapping type="normalized">:</mapping>-->   <!-- ####CHECK### -->
+        </char>
+
+        <!-- COMPOSED CHARACTERS NOT IN MUFI -->
+
+        <char xml:id="ctilde">
+          <charName>LATIN SMALL LETTER C WITH TILDE</charName>
+          <mapping type="codepoin" subtype="composed">U+0065 + U+0303</mapping>
+          <mapping type="diplomatic">c̃</mapping>
+          <mapping type="normalized">c</mapping>
+        </char>
+
+        <char xml:id="etilde">
+          <charName>LATIN SMALL LETTER E WITH TILDE</charName>
+          <mapping type="codepoint" subtype="composed">U+0065 + U+0303</mapping>
+          <mapping type="diplomatic">ẽ</mapping>
+          <mapping type="normalized">e</mapping>
+        </char>
+
+        <char xml:id="itilde">
+          <charName>LATIN SMALL LETTER I WITH TILDE</charName>
+          <mapping type="codepoint" subtype="composed">U+0069 + U+0303</mapping>
+          <mapping type="diplomatic">ĩ</mapping>
+          <mapping type="normalized">i</mapping>
+        </char>
+
+        <char xml:id="mtilde">
+          <charName>LATIN SMALL LETTER M WITH TILDE</charName>
+          <mapping type="codepoint" subtype="composed">U+006D + U+0303</mapping>
+          <mapping type="diplomatic">m̃</mapping>
+          <mapping type="normalized">m</mapping>
+        </char>
+
+        <char xml:id="ptilde">
+          <charName>LATIN SMALL LETTER P WITH TILDE</charName>
+          <mapping type="codepoint" subtype="composed">U+0070 + U+0303</mapping>
+          <mapping type="diplomatic">p̃</mapping>
+          <mapping type="normalized">p</mapping>
+        </char>
+
+        <char xml:id="qtilde">
+          <charName>LATIN SMALL LETTER Q WITH TILDE</charName>
+          <mapping type="codepoint" subtype="composed">U+0071 + U+0303</mapping>
+          <mapping type="diplomatic">q̃</mapping>
+          <mapping type="normalized">q</mapping>
+        </char>
+
+        <char xml:id="rtilde">
+          <charName>LATIN SMALL LETTER R WITH TILDE</charName>
+          <mapping type="codepoint" subtype="composed">U+0072 + U+0303</mapping>
+          <mapping type="diplomatic">r̃</mapping>
+          <mapping type="normalized">r</mapping>
+        </char>
+
+        <char xml:id="ttilde">
+          <charName>LATIN SMALL LETTER T WITH TILDE</charName>
+          <mapping type="codepoint" subtype="composed">U+0074 + U+0303</mapping>
+          <mapping type="diplomatic">t̃</mapping>
+          <mapping type="normalized">t</mapping>
+        </char>
+
+        <char xml:id="otildevert">
+          <charName>LATIN SMALL LETTER O WITH VERTICAL TILDE</charName>
+          <mapping type="codepoint" subtype="composed">U+006F + U+033E</mapping>
+          <mapping type="diplomatic">o̾</mapping>
+          <mapping type="normalized">o</mapping>
+        </char>
+
+        <char xml:id="utildevert">
+          <charName>LATIN SMALL LETTER U WITH VERTICAL TILDE</charName>
+          <mapping type="codepoint" subtype="composed">U+0075 + U+033E</mapping>
+          <mapping type="diplomatic">u̾</mapping>
+          <mapping type="normalized">u</mapping>
+        </char>
+
+        <char xml:id="bercurl"><!-- CHECK potrebbe essere semplicmente combcurl; nel caso si cambia il nome -->
+          <charName>LATIN SMALL LETTER B WITH ABBREVIATION MARK ZIGZAG ABOVE CURLY FORM</charName>
+          <mapping type="codepoint" subtype="composed">U+0062 + U+F1C8</mapping>
+          <mapping type="diplomatic"></mapping>
+          <mapping type="normalized">b</mapping>
+        </char>
+
+        <char xml:id="drotercurl">
+          <charName>LATIN SMALL LETTER INSULAR D WITH ABBREVIATION MARK ZIGZAG ABOVE CURLY FORM</charName>
+          <mapping type="codepoint" subtype="composed">U+A77A + U+F1C8</mapping>
+          <mapping type="diplomatic"></mapping>
+          <mapping type="normalized">d</mapping>
+        </char>
+
+        <char xml:id="hercurl"><!-- CHECK -->
+          <charName>LATIN SMALL LETTER H WITH ABBREVIATION MARK ZIGZAG ABOVE CURLY FORM</charName>
+          <mapping type="codepoint" subtype="composed">U+0068 + U+F1C8</mapping>
+          <mapping type="diplomatic"></mapping>
+          <mapping type="normalized">h</mapping>
+        </char>
+
+        <char xml:id="Eunc">
+          <charName>LATIN CAPITAL LETTER E UNCIAL FORM</charName>
+          <mapping type="codepoint" subtype="MUFI-PUA">U+F10A</mapping>
+          <mapping type="diplomatic"></mapping>
+          <mapping type="normalized">E</mapping>
+        </char>
+
+        <char xml:id="muncdes">
+          <charName>LATIN SMALL LETTER M UNCIAL FORM WITH RIGH DESCENDER</charName>
+          <mapping type="codepoint" subtype="MUFI-PUA">U+F23D</mapping>
+          <mapping type="diplomatic">&#62013;</mapping>
+          <mapping type="normalized">m</mapping>
+        </char>
+
+        <char xml:id="Muncdesosup">
+          <charName>LATIN MEDIUSCULE LETTER M UNCIAL FORM WITH RIGH DESCENDER AND RING ABOVE</charName>
+          <mapping type="codepoint" subtype="composed">U+F224 + U+02DA</mapping>
+          <mapping type="diplomatic">˚</mapping>
+          <mapping type="normalized">M</mapping>
+        </char>
+
+        <char xml:id="mring">
+          <charName>LATIN SMALL LETTER M WITH RING ABOVE</charName>
+          <mapping type="codepoint" subtype="composed">U+006D + U+02DA</mapping>
+          <mapping type="diplomatic">m˚</mapping>
+          <mapping type="normalized">m</mapping>
+        </char>
+
+        <char xml:id="nrdes">
+          <charName>LATIN SMALL LETTER N WITH RIGHT DESCENDER</charName>
+          <mapping type="codepoint" subtype="MUFI-PUA">U+F228</mapping>
+          <mapping type="diplomatic"></mapping><!-- non sembra ma c'è -->
+          <mapping type="normalized">n</mapping>
+        </char>
+
+        <char xml:id="inodotsup">
+          <charName>COMBINING LATIN SMALL LETTER DOTLESS I</charName>
+          <mapping type="codepoint" subtype="composed">U+F02F</mapping>
+          <mapping type="diplomatic">&#61487;</mapping>
+        </char>
+
+        <char xml:id="cinodotsup">
+          <charName>LATIN SMALL LETTER C WITH VERTICAL DOTLESS I</charName>
+          <mapping type="codepoint" subtype="composed">U+0063 + U+F02F</mapping>
+          <mapping type="diplomatic">c</mapping>
+          <mapping type="normalized">c</mapping>
+        </char>
+
+        <char xml:id="ginodotsup">
+          <charName>LATIN SMALL LETTER G WITH VERTICAL DOTLESS I</charName>
+          <mapping type="codepoint" subtype="composed">U+0067 + U+F02F</mapping>
+          <mapping type="diplomatic">g</mapping>
+          <mapping type="normalized">g</mapping>
+        </char>
+
+        <char xml:id="ninodotsup">
+          <charName>LATIN SMALL LETTER N WITH VERTICAL DOTLESS I</charName>
+          <mapping type="codepoint" subtype="composed">U+006E + U+F02F</mapping>
+          <mapping type="diplomatic">n</mapping>
+          <mapping type="normalized">n</mapping>
+        </char>
+
+        <char xml:id="minodotsup">
+          <charName>LATIN SMALL LETTER M WITH VERTICAL DOTLESS I</charName>
+          <mapping type="codepoint" subtype="composed">U+006D + U+F02F</mapping>
+          <mapping type="diplomatic">m</mapping>
+          <mapping type="normalized">m</mapping>
+        </char>
+
+        <char xml:id="pinodotsup">
+          <charName>LATIN SMALL LETTER P WITH VERTICAL DOTLESS I</charName>
+          <mapping type="codepoint" subtype="composed">U+0070 + U+F02F</mapping>
+          <mapping type="diplomatic">p</mapping>
+          <mapping type="normalized">p</mapping>
+        </char>
+
+        <char xml:id="sinodotsup">
+          <charName>LATIN SMALL LETTER S WITH VERTICAL DOTLESS I</charName>
+          <mapping type="codepoint" subtype="composed">U+0073 + U+F02F</mapping>
+          <mapping type="diplomatic">s</mapping>
+          <mapping type="normalized">s</mapping>
+        </char>
+
+        <char xml:id="qinodotsup">
+          <charName>LATIN SMALL LETTER Q WITH VERTICAL DOTLESS I</charName>
+          <mapping type="codepoint" subtype="composed">U+0071 + U+F02F</mapping>
+          <mapping type="diplomatic">q</mapping>
+          <mapping type="normalized">q</mapping>
+        </char>
+
+        <char xml:id="tinodotsup">
+          <charName>LATIN SMALL LETTER T WITH VERTICAL DOTLESS I</charName>
+          <mapping type="codepoint" subtype="composed">U+0074 + U+F02F</mapping>
+          <mapping type="diplomatic">t</mapping>
+          <mapping type="normalized">t</mapping>
+        </char>
+
+        <char xml:id="ptsup">
+          <charName>LATIN SMALL LETTER P WITH LATIN SMALL LETTER T ABOVE</charName>
+          <mapping type="codepoint" subtype="composed">U+0069 + U+036D</mapping>
+          <mapping type="diplomatic">pͭ</mapping>
+        </char>
+
+        <char xml:id="ttildevert">
+          <charName>LATIN SMALL LETTER T WITH VERTICAL TILDE</charName>
+          <mapping type="codepoint" subtype="composed">U+0074 + U+033E</mapping>
+          <mapping type="diplomatic">t̾</mapping>
+          <mapping type="normalized">t</mapping>
+        </char>
+
+        <char xml:id="uinodotsup">
+          <charName>LATIN SMALL LETTER U WITH VERTICAL DOTLESS I</charName>
+          <mapping type="codepoint" subtype="composed">U+0075 + U+F02F</mapping>
+          <mapping type="diplomatic">u</mapping>
+          <mapping type="normalized">u</mapping>
+        </char>
+
+        <!-- PUNCTUATION -->
+
+        <char xml:id="dblsol">
+          <charName>PUNCTUATION MARK DOUBLE SOLIDUS</charName>
+          <mapping type="codepoint">2AFD</mapping>
+          <mapping type="diplomatic">⫽</mapping>
+        </char>
+
+        <char xml:id="ductsimpl">
+          <charName>HIGH COMMA POSITURA (SIMPLEX DUCTUS)</charName>
+          <mapping type="codepoint">U+F1E3</mapping>
+          <mapping type="diplomatic"></mapping>
+          <mapping type="normalized">:</mapping>
+        </char>
+
+        <char xml:id="colmidcomposit">
+          <charName>COLON WITH MIDDLE COMMA POSITURA</charName>
+          <mapping subtype="MUFI-PUA" type="codepoint">U+F1E5</mapping>
+          <mapping type="diplomatic"></mapping>
+          <!--<mapping type="normalized"></mapping>-->
+        </char>
+
+        <char xml:id="middot">
+          <charName>MIDDLE DOT</charName>
+          <mapping type="codepoint">U+00B7</mapping>
+          <mapping type="diplomatic">·</mapping>
+          <!--<mapping type="normalized"></mapping>-->
+        </char>
+
+        <char xml:id="hidot">
+          <charName>DISTINCTIO</charName>
+          <mapping subtype="MUFI-PUA" type="codepoint">U+F1F8</mapping>
+          <mapping type="diplomatic"></mapping>
+          <!--<mapping type="normalized"></mapping>-->
+        </char>
+
+        <char xml:id="logand">
+          <charName>ADDENDA</charName>
+          <mapping type="codepoint">U+2227</mapping>
+          <mapping type="diplomatic">∧</mapping>
+        </char>
+
+        <char xml:id="combovl">
+         <charName>COMBINING OVERLINE</charName>
+          <mapping type="diplomatic">̅</mapping>
+        </char>
+
+
+
+      </charDecl>
+    </encodingDesc>
+
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+
+    <revisionDesc status="draft">
+      <change when="2014-08" who="RRDT" status="draft">First TEI encoding.</change>
+    </revisionDesc>
+
+
+  </teiHeader>
+
+  <facsimile>
+    <surface>
+
+      <graphic url='' width='' height=''/>
+
+      <!-- zone -->
+
+
+    </surface>
+  </facsimile>
+
+  <text xml:id="" type="">
+
+    <!-- ############  NOTE VARIE  #############   -->
+    <!-- - i <del> devono avere @rend, non @type   -->
+    <!-- - aggiungere un @place per ogni <add>     -->
+    <!-- - inserire @place per <fw> o per <add>?   -->
+    <!-- - controllare e uniformare tutti i @place -->
+    <!-- - marcatura uniforme per tutte le [ ]     -->
+    <!-- - spostare tutti i marginalia in hotspot? -->
+    <!-- - specificare la mano per <add> moderne con @hand="modern" (o simili)  -->
+    <!-- - marcare i punti dell'edizione con <reg> -->
+
+    <body>
+
+      <div n="1" type="section">
+
+        <!-- #######################################  folio 01r  ####################################### -->
+
+        <pb n="1" xml:id="page1"/>
+        <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.
+At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+</p>
+      </div>
+    </body>
+    <back>
+
+
+      <div type="biblCompleta">
+        <listBibl>
+
+          <bibl xml:id=""></bibl>
+
+
+        </listBibl>
+      </div>
+    </back>
+
+  </text>
+</TEI>

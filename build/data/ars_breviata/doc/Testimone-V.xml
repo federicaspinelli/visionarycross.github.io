@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:math="http://www.w3.org/1998/Math/MathML"
+    xmlns:svg="http://www.w3.org/2000/svg" xmlns:xi="http://www.w3.org/2001/XInclude">
+    
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Ars Breviata</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>inserire?</p>
+            </publicationStmt>
+            <sourceDesc default="false">
+                
+                <msDesc>
+                    
+                    <!-- Informazioni sulla collocazione fisica del manoscritto -->
+                    <msIdentifier>
+                        <settlement>Bruxelles</settlement>
+                        <repository>La collection des bollandistes à la Bibliothèque royale de Belgique</repository>
+                        <msName>Miscellany of mainly grammatical and rhetorical tex</msName>
+                    </msIdentifier>
+                    
+                    <!-- Informazioni su autore e lingua -->
+                    <msContents>
+                        <summary>IN TEORIA SAREBBE ELIMINABILE PERCHè TRAMITE XI:INCLUDE IL TEI-HEADER è IGNORATO.</summary>
+                        <textLang>Latino</textLang>
+                    </msContents>
+                    
+                    <!-- Descrizione fisica del manoscritto.-->
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <p>IN TEORIA SAREBBE ELIMINABILE PERCHè TRAMITE XI:INCLUDE IL TEI-HEADER è IGNORATO.</p>
+                            </supportDesc>
+                        </objectDesc>
+                    </physDesc>
+                    
+                    <!-- Informazioni storiche sul manoscritto -->
+                    <history>
+                        <summary>
+                            <p>IN TEORIA SAREBBE ELIMINABILE PERCHè TRAMITE XI:INCLUDE IL TEI-HEADER è IGNORATO.</p>
+                        </summary>
+                    </history>
+                    
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        
+        <encodingDesc>
+            <projectDesc>
+                <p/>
+            </projectDesc>
+            <editorialDecl>
+                <correction status="unknown" method="silent">
+                    <p/>
+                </correction>
+                <normalization method="silent">
+                    <p/>
+                </normalization>
+                <segmentation>
+                    <p/>
+                </segmentation>
+                <hyphenation eol="all">
+                    <p>Physical line breaks are rigidly observed.</p>
+                </hyphenation>
+            </editorialDecl>
+            
+            <charDecl>
+                
+                <!-- ######################################################################## -->
+                <!-- NB: è INDISPENSABILE usare il font Junicode per visualizzare i caratteri -->
+                <!-- ######################################################################## -->
+                
+                <!-- <char xml:id="xxx">
+          <charName></charName>
+          <mapping type="codepoint" subtype="MUFI-PUA">U+</mapping>
+          <mapping type="diplomatic"></mapping>
+          <mapping type="normalized"></mapping>
+        </char>
+        
+         regular letters -->
+                
+                
+                <char xml:id="am">
+                    <charName>Littera a cum linea</charName>
+                    <mapping type="codepoint">inserire</mapping>
+                    <mapping type="diplomatic">ã</mapping>
+                    <mapping type="normalized">am</mapping>
+                </char>
+                
+                <char xml:id="em">
+                    <charName>Littera e cum linea</charName>
+                    <mapping type="codepoint">inserire</mapping>
+                    <mapping type="diplomatic">ẽ</mapping>
+                    <mapping type="normalized">em</mapping>
+                </char>
+                
+                <char xml:id="est">
+                    <charName>Littera e cum linea recta</charName>
+                    <mapping type="codepoint">inserire</mapping>
+                    <mapping type="diplomatic"> ē</mapping>
+                    <mapping type="normalized">est</mapping>
+                </char>
+                
+                <char xml:id="mus">
+                    <charName>Littera m</charName>
+                    <mapping type="codepoint">inserire</mapping>
+                    <mapping type="diplomatic">ꝳ</mapping>
+                    <mapping type="normalized">mus</mapping>
+                </char>
+                
+                <char xml:id="non">
+                    <charName>Littera n cum linea recta</charName>
+                    <mapping type="codepoint">inserire</mapping>
+                    <mapping type="diplomatic"></mapping>
+                    <mapping type="normalized">non</mapping>
+                </char>
+                
+                <char xml:id="nus">
+                    <charName>Littera n</charName>
+                    <mapping type="codepoint">inserire</mapping>
+                    <mapping type="diplomatic">ꝴ</mapping>
+                    <mapping type="normalized">nus</mapping>
+                </char>
+                
+                <char xml:id="per">
+                    <charName>inserire</charName>
+                    <mapping type="codepoint">inserire</mapping>
+                    <mapping type="diplomatic">ꝑ</mapping>
+                    <mapping type="normalized">per</mapping>
+                </char>
+                
+                <!-- ꝑ<g ref="#ꝑ=per"/> -->
+                
+                <!-- ꝥ</am>poner<am><g ref="#et"/></am></abbr></orig> -->
+                
+                <!-- ŕ<g ref="#ŕ=runt"/> -->
+                
+                <char xml:id="ter">
+                    <charName>Littera t cum linea obliqua</charName>
+                    <mapping type="codepoint">inserire</mapping>
+                    <mapping type="diplomatic"></mapping>
+                    <mapping type="normalized">ter</mapping>
+                </char>
+                
+                <char xml:id="xit">
+                    <charName>Littera x cum linea</charName>
+                    <mapping type="codepoint">inserire</mapping>
+                    <mapping type="diplomatic">ẍ</mapping>
+                    <mapping type="normalized">xit</mapping>
+                </char>
+                
+                <!--  <g ref="#=vero"/>-->
+                
+            </charDecl>
+        </encodingDesc>
+        
+        <profileDesc>
+            <langUsage>
+                <language ident="lat">Latin</language>
+            </langUsage>
+        </profileDesc>
+        
+        <revisionDesc status="draft">
+            <change when="2014-08" who="RRDT" status="draft">First TEI encoding.</change>
+        </revisionDesc>
+        
+        
+    </teiHeader>
+    
+    <facsimile>
+        <surface>
+            
+            <!--<graphic url='Rotulo-Stitched_70_verticale_100dpi_10quality.jpg' width='3501px' height='55056px'/>  --> 
+            
+            <!-- primo folio -->
+            
+            <!--  <zone ulx="470" uly="308" lrx="684" lry="374" rendition="HotSpot" xml:id="ST_hs_01r_01"/>-->  
+            
+            
+        </surface>
+    </facsimile>
+    
+    <text xml:id="V_text" type="prose">
+        
+        <body>
+            
+            
+            
+            <div n="1" type="section">
+                
+                <pb facs="data/images/single/fol_1v.jpg" n="1v" />
+                
+                <p n="1" xml:id="TV_1v">
+                    <label n="7"/>
+                    <lb facs="#TV_line_01v_01" n="1" xml:id="TV_lb_01v_01"/>
+                    <damage> 
+                        conpara<gap unit="chars" quantity="4"/><supplied resp="#FM">tiuo</supplied>  <!-- ricontrollare annotazione -->
+                    </damage>  
+                    <w><choice>
+                        <orig><abbr><am><g ref="#et"/></am></abbr></orig>
+                        <reg><expan><ex>et</ex></expan></reg>
+                    </choice></w>
+                    <w><choice>
+                        <orig><abbr>su<am>ꝑ<g ref="#per"/></am>latiuo</abbr></orig>
+                        <reg><expan>su<ex>per</ex>latiuo</expan></reg>
+                    </choice></w>
+                    <w><choice>
+                        <orig><abbr><am><g ref="#non"/></am></abbr></orig>
+                        <reg><expan><ex>non</ex></expan></reg>
+                    </choice></w>  
+                    est aequalitas. Sed aliud alii 
+                    <w><choice>
+                        <orig><abbr><am><g ref="#prae"/></am>p</abbr></orig>
+                        <reg><expan><ex>pr(a)e</ex>p</expan></reg>
+                    </choice></w>
+                    
+                    <lb facs="#TV_line_01v_02" n="2" xml:id="TV_lb_01v_02"/>
+                    <damage /> <unclear >    <!-- VERIFICARE --> 
+                    
+                    ut 
+                    comparatiuus </unclear>
+                    <w><choice>
+                        <orig><abbr>ablatiu<am>ũ<g ref="#um"/></am></abbr></orig>
+                        <reg><expan>ablatiu<ex>um</ex></expan></reg>
+                    </choice></w>
+                    casum regat aliquando 
+                    <w><choice>
+                        <orig><abbr><am><g ref="#et"/></am>i<am>ã<g ref="#am"/></am></abbr></orig>
+                        <reg><expan><ex>et</ex>i<ex>am</ex></expan></reg>
+                    </choice></w> 
+                    gen
+
+                    
+                    <lb  facs="#TV_line_01v_03" n="3" xml:id="TV_lb_01v_03"/>  
+                    <damage> <unclear/> 
+                        <w><choice>
+                            <orig><abbr>plural<am>ẽ<g ref="#em"/></am></abbr></orig>
+                            <reg><expan>plural<ex>em</ex></expan></reg>
+                        </choice></w> 
+                    </damage> 
+                    regit , ut cum 
+                    <w><choice>
+                        <orig><abbr>d<am><g ref="#et"/></am>rib<am><g ref="#us"/></am></abbr></orig>
+                        <reg><expan>d<ex>et</ex>rib<ex>us</ex></expan></reg>
+                    </choice></w> 
+                    episcopis 
+                    <w><choice>
+                        <orig><abbr>Interroga<am>ꝳ<g ref="#mus"/></am></abbr></orig>
+                        <reg><expan>Interroga<ex>mus</ex></expan></reg>
+                    </choice></w>  
+                    quis illor
+                    
+                    <lb facs="#TV_line_01v_04" n="4" xml:id="TV_lb_01v_04"/>  
+                    <damage/> <unclear/>  
+                    ior 
+                    <w><choice>
+                        <orig><abbr><am>∻<g ref="#est"/></am></abbr></orig>
+                        <reg><expan><ex>est</ex></expan></reg>
+                    </choice></w>
+                    unu de ipsis  
+                    <w><choice>
+                        <orig><abbr>trib<am><g ref="#us"/></am></abbr></orig>
+                        <reg><expan>trib<ex>us</ex></expan></reg>
+                    </choice></w>
+                    <w><choice>
+                        <orig><abbr>prior<am>ẽ<g ref="#em"/></am></abbr></orig>
+                        <reg><expan>prior<ex>em</ex></expan></reg>
+                    </choice></w> 
+                    uolentes agnoscere . si 
+                    <w><choice>
+                        <orig><abbr>aū</abbr></orig>
+                        <reg><expan>autem</expan></reg>
+                    </choice></w> 
+                    <w><choice>
+                        <orig><abbr>dicta<am>ꝳ<g ref="#mus"/></am></abbr></orig>
+                        <reg><expan>dicta<ex>mus</ex></expan></reg>
+                    </choice></w>
+                    qui 
+                    <unclear/>
+                    
+                    <lb facs="#TV_line_01v_05" n="5" xml:id="TV_lb_01v_05" />  
+                    <damage>illis prior </damage>
+                    <w><choice>
+                        <orig><abbr><am>∻<g ref="#est"/></am></abbr></orig>
+                        <reg><expan><ex>est</ex></expan></reg>
+                    </choice></w>
+                    nescio 
+                    <w><choice>
+                        <orig><abbr>qu<am>ã<g ref="#am"/></am></abbr></orig>
+                        <reg><expan>qu<ex>am</ex></expan></reg>
+                    </choice></w> 
+                    <w><choice>
+                        <orig><abbr><am>ꝑ<g ref="#per"/></am>son<am>ã<g ref="#am"/></am></abbr></orig>
+                        <reg><expan><ex>per</ex>son<ex>am</ex></expan></reg>
+                    </choice></w>
+                    <w><choice>
+                        <orig><abbr>quart<am>ã<g ref="#am"/></am></abbr></orig>
+                        <reg><expan>quart<ex>am</ex></expan></reg>
+                    </choice></w>
+                    <w><choice>
+                        <orig><abbr>uidet<am><g ref="#ur"/></am></abbr></orig>
+                        <reg><expan>uidet<ex>ur</ex></expan></reg>
+                    </choice></w> 
+                    Inquirere quae tribus
+                    
+                    <lb facs="#TV_line_01v_06" n="6" xml:id="TV_lb_01v_06" />
+                    <damage>illis</damage> 
+                    prior 
+                    <w><choice>
+                        <orig><abbr><am>∻<g ref="#est"/></am></abbr></orig>
+                        <reg><expan><ex>est</ex></expan></reg>
+                    </choice></w>
+                    Unde 
+                    <w><choice>
+                        <orig><abbr><am><g ref="#et"/></am>i<am>ã<g ref="#am"/></am></abbr></orig>
+                        <reg><expan><ex>et</ex>i<ex>am</ex></expan></reg>
+                    </choice></w>
+                    paulus apostolus cum 
+                    <w><choice>
+                        <orig><abbr>dicer<am><g ref="#et"/></am></abbr></orig>
+                        <reg><expan>dicer<ex>et</ex></expan></reg>
+                    </choice></w> 
+                    manet autem 
+                    
+                    <lb  facs="#TV_line_01v_07" n="7" xml:id="TV_lb_01v_07"/>  
+                    fides spes caritas tria haec 
+                    <w><choice>
+                        <orig><abbr><am>q</am></abbr></orig>
+                        <reg><expan><ex>quoniam</ex></expan></reg>
+                    </choice></w>
+                    caritas Inter tria Iam connumerata
+                    
+                    <lb facs="#TV_line_01v_08" n="8" xml:id="TV_lb_01v_08"/>  
+                    fuerat 
+                    <w><choice>
+                        <orig><abbr>di<am>ẍ<g ref="#xit"/></am></abbr></orig>
+                        <reg><expan>di<ex>xit</ex></expan></reg>
+                    </choice></w>
+                    maIor 
+                    <w><choice>
+                        <orig><abbr><am>aū</am></abbr></orig>
+                        <reg><expan><ex>autem</ex></expan></reg>
+                    </choice></w>
+                    <w><choice>
+                        <orig><abbr>hor<am>ũ<g ref="#um"/></am></abbr></orig>
+                        <reg><expan>hor<ex>um</ex></expan></reg>
+                    </choice></w>  
+                    caritas. nam si 
+                    <w><choice>
+                        <orig><abbr>dicer<am><g ref="#et"/></am></abbr></orig>
+                        <reg><expan>dicer<ex>et</ex></expan></reg>
+                    </choice></w> 
+                    maIor 
+                    <w><choice>
+                        <orig><abbr><am>aū</am></abbr></orig>
+                        <reg><expan><ex>autem</ex></expan></reg>
+                    </choice></w>
+                    his 
+                    <w>ca
+                    
+                        <lb facs="#TV_line_01v_09" n="9" xml:id="TV_lb_01v_09"/>  
+                        ritas</w>. 
+                    <w><choice>
+                        <orig><abbr>ali<am>ã<g ref="#am"/></am></abbr></orig>
+                        <reg><expan>ali<ex>am</ex></expan></reg>
+                    </choice></w>
+                    <w><choice>
+                        <orig><abbr>caritat<am>ẽ<g ref="#em"/></am></abbr></orig>
+                        <reg><expan>caritat<ex>em</ex></expan></reg>
+                    </choice></w>
+                    quasi 
+                    <w><choice>
+                        <orig><abbr>quart<am>ũ<g ref="#um"/></am></abbr></orig>
+                        <reg><expan>quart<ex>um</ex></expan></reg>
+                    </choice></w>
+                    aliquid Inducere 
+                    <w><choice>
+                        <orig><abbr>uideret<am><g ref="#ur"/></am></abbr></orig>
+                        <reg><expan>uideret<ex>ur</ex></expan></reg>
+                    </choice></w>
+                    <w><choice>
+                        <orig><abbr><am>q</am></abbr></orig>
+                        <reg><expan><ex>quod</ex></expan></reg>
+                    </choice></w> 
+                    <w><choice>
+                        <orig><abbr>trib<am><g ref="#us"/></am></abbr></orig>
+                        <reg><expan>trib<ex>us</ex></expan></reg>
+                    </choice></w>
+                    
+                    <lb  facs="#TV_line_01v_10" n="10" xml:id="TV_lb_01v_10"/> 
+                    dinumeratis Id 
+                    <w><choice>
+                        <orig><abbr><am>∻<g ref="#est"/></am></abbr></orig>
+                        <reg><expan><ex>est</ex></expan></reg>
+                    </choice></w>
+                    fidei 
+                    <w><choice>
+                        <orig><abbr><am><g ref="#et"/></am></abbr></orig>
+                        <reg><expan><ex>et</ex></expan></reg>
+                    </choice></w> 
+                    spei 
+                    <w><choice>
+                        <orig><abbr><am><g ref="#et"/></am></abbr></orig>
+                        <reg><expan><ex>et</ex></expan></reg>
+                    </choice></w>
+                    caritati 
+                    <w><choice>
+                        <orig><abbr><am>ꝥ</am>poner<am><g ref="#et"/></am></abbr></orig> <!-- inserire simbolo -->
+                        <reg><expan><ex>prae</ex>poner<ex>et</ex></expan></reg>
+                    </choice></w>
+                    cuIus 
+                    rationis 
+                    <w><choice>
+                        <orig><abbr>mi<am>ꝴ<g ref="#nus"/></am></abbr></orig>
+                        <reg><expan>mi<ex>nus</ex></expan></reg>
+                    </choice></w>
+                    
+                    <lb facs="#TV_line_01v_11" n="11" xml:id="TV_lb_01v_11"/> 
+                    capaces 
+                    <w><choice>
+                        <orig><abbr>quid<am>ã<g ref="#am"/></am></abbr></orig>
+                        <reg><expan>quid<ex>am</ex></expan></reg>
+                    </choice></w>
+                    In aliquantis 
+                    <w><choice>
+                        <orig><abbr>codicib<am><g ref="#us"/></am></abbr></orig>
+                        <reg><expan>codicib<ex>us</ex></expan></reg>
+                    </choice></w>
+                    <w><choice>
+                        <orig><abbr>e<am><g ref="#men"/></am>dave<am>ŕ</am></abbr></orig>
+                        <reg><expan>e<ex>men</ex>dave<ex>runt</ex></expan></reg>
+                    </choice></w>   <!-- inserire ai simboli -->
+                    . maIor 
+                    <w><choice>
+                        <orig><abbr><am>aū</am></abbr></orig>
+                        <reg><expan><ex>autem</ex></expan></reg>
+                    </choice></w>
+                    his est
+                    
+                    <lb facs="#TV_line_01v_12" n="12" xml:id="TV_lb_01v_12"/> 
+                    caritas. Ut 
+                    <w><choice>
+                        <orig><abbr>c<am>ũ<g ref="#um"/></am></abbr></orig>
+                        <reg><expan>c<ex>um</ex></expan></reg>
+                    </choice></w>
+                    <w><choice>
+                        <orig><abbr>dici<am>ꝳ<g ref="#mus"/></am></abbr></orig>
+                        <reg><expan>dici<ex>mus</ex></expan></reg>
+                    </choice></w>
+                    Iustior hic illo, 
+                    <w><choice>
+                        <orig><abbr><am><g ref="#et"/></am></abbr></orig>
+                        <reg><expan><ex>et</ex></expan></reg>
+                    </choice></w> 
+                    <w><choice>
+                        <orig><abbr>nominatiu<am>ũ<g ref="#um"/></am></abbr></orig>
+                        <reg><expan>nominatiu<ex>um</ex></expan></reg>
+                    </choice></w> 
+                    ut 
+                    <w><choice>
+                        <orig><abbr>c<am>ũ<g ref="#um"/></am></abbr></orig>
+                        <reg><expan>c<ex>um</ex></expan></reg>
+                    </choice></w>
+                    <w><choice>
+                        <orig><abbr>dici<am>ꝳ<g ref="#mus"/></am></abbr></orig>
+                        <reg><expan>dici<ex>mus</ex></expan></reg>
+                    </choice></w> 
+                    <w>Iusti
+                    
+                        <lb facs="#TV_line_01v_13" n="13" xml:id="TV_lb_01v_13"/> 
+                    or</w> 
+                    hic 
+                    <w><choice>
+                        <orig><abbr>qu<am>ã<g ref="#am"/></am></abbr></orig>
+                        <reg><expan>qu<ex>am</ex></expan></reg>
+                    </choice></w>
+                    ille deinde non 
+                    <w><choice>
+                        <orig><abbr>sol<am>ũ<g ref="#um"/></am></abbr></orig>
+                        <reg><expan>sol<ex>um</ex></expan></reg>
+                    </choice></w>
+                    suo generi uelut uelocior homo 
+                    <w>homi
+                    
+                        <lb facs="#TV_line_01v_14" n="14" xml:id="TV_lb_01v_14"/> 
+                        ne</w>
+                    . sed alieno 
+                    <w><choice>
+                        <orig><abbr><am><g ref="#et"/></am>i<am>ã<g ref="#am"/></am></abbr></orig>
+                        <reg><expan><ex>et</ex>i<ex>am</ex></expan></reg>
+                    </choice></w> 
+                    <w><choice>
+                        <orig><abbr>comparat<am><g ref="#ur"/></am></abbr></orig>
+                        <reg><expan>comparat<ex>ur</ex></expan></reg>
+                    </choice></w>
+                    ut uelocior lepus homine  
+                    <w><choice>
+                        <orig><abbr><am><g ref="#et"/></am></abbr></orig>
+                        <reg><expan><ex>et</ex></expan></reg>
+                    </choice></w>
+                    <w>singula
+                    
+                        <lb facs="#TV_line_01v_15" n="15" xml:id="TV_lb_01v_15"/> 
+                    ris</w> 
+                    plurali· ut hic fortior est illis aut fortior 
+                    <w><choice>
+                        <orig><abbr><am>∻<g ref="#est"/></am></abbr></orig>
+                        <reg><expan><ex>est</ex></expan></reg>
+                    </choice></w>
+                    <w><choice>
+                        <orig><abbr>qu<am>ã<g ref="#am"/></am></abbr></orig>
+                        <reg><expan>qu<ex>am</ex></expan></reg>
+                    </choice></w> 
+                    illi 
+                    <w><choice>
+                        <orig><abbr><am><g ref="#et"/></am></abbr></orig>
+                        <reg><expan><ex>et</ex></expan></reg>
+                    </choice></w>
+                    pluralis
+                    
+                    <lb facs="#TV_line_01v_16" n="16" xml:id="TV_lb_01v_16"/> 
+                    singulari ut hii fortiores illo uel 
+                    <w><choice>
+                        <orig><abbr>qu<am>ã<g ref="#am"/></am></abbr></orig>
+                        <reg><expan>qu<ex>am</ex></expan></reg>
+                    </choice></w> 
+                    ille ; 
+                    <w><choice>
+                        <orig><abbr>su<am>ꝑ<g ref="#per"/></am>latiuus</abbr></orig>
+                        <reg><expan>su<ex>per</ex>latiuus</expan></reg>
+                    </choice></w> suꝑ<g ref="#ꝑ=per"/> 
+                    <w><choice>
+                        <orig><abbr><am><g ref="#=vero"/></am></abbr></orig>
+                        <reg><expan><ex>uero</ex></expan></reg>
+                    </choice></w>  <!-- inserire a caratteri -->
+                    <w><choice>
+                        <orig><abbr><am><g ref="#et"/></am></abbr></orig>
+                        <reg><expan><ex>et</ex></expan></reg>
+                    </choice></w>
+                    <w><choice>
+                        <orig><abbr>tant<am>ũ<g ref="#um"/></am>mo</abbr></orig>
+                        <reg><expan>tant<ex>um</ex>mo</expan></reg>
+                    </choice>
+                    
+                        <lb facs="#TV_line_01v_17" n="17" xml:id="TV_lb_01v_17"/> 
+                        do</w> 
+                    suo generi 
+                    <w><choice>
+                        <orig><abbr><am>c̄</am>parat<am><g ref="#ur"/></am></abbr></orig>
+                        <reg><expan><ex>com</ex>parat<ex>ur</ex></expan></reg>
+                    </choice></w>  
+                    <w><choice>
+                        <orig><abbr><am><g ref="#et"/></am></abbr></orig>
+                        <reg><expan><ex>et</ex></expan></reg>
+                    </choice></w> 
+                    <w><choice>
+                        <orig><abbr><am><g ref="#non"/></am></abbr></orig>
+                        <reg><expan><ex>non</ex></expan></reg>
+                    </choice></w>
+                    nisi 
+                    <w><choice>
+                        <orig><abbr><am>ꝑ<g ref="#per"/> </am></abbr></orig>
+                        <reg><expan><ex>per</ex></expan></reg>
+                    </choice></w>  <!-- inserire e cpntrollare ꝑ<g ref="#ꝑ=per"/> -->
+                    <w><choice>
+                        <orig><abbr>gen<am><g ref="#et"/></am>i<am>ũ<g ref="#um"/></am></abbr></orig>
+                        <reg><expan>gen<ex>et</ex>i<ex>um</ex></expan></reg>
+                    </choice></w>
+                    <w><choice>
+                        <orig><abbr>plural<am>ẽ<g ref="#em"/></am></abbr></orig>
+                        <reg><expan>plural<ex>em</ex></expan></reg>
+                    </choice></w>
+                    . Non enim 
+                    <w><choice>
+                        <orig><abbr>possu<am>ꝳ<g ref="#mus"/></am></abbr></orig>
+                        <reg><expan>possu<ex>mus</ex></expan></reg>
+                    </choice></w>
+                    
+                    <lb facs="#TV_line_01v_18" n="18" xml:id="TV_lb_01v_18"/> 
+                    dicere 
+                    <w><choice>
+                        <orig><abbr>uelocissi<am>ꝳ<g ref="#mus"/></am></abbr></orig>
+                        <reg><expan>uelocissi<ex>mus</ex></expan></reg>
+                    </choice></w>
+                    equus nisi 
+                    <w><choice>
+                        <orig><abbr>equor<am>ũ<g ref="#um"/></am></abbr></orig>
+                        <reg><expan>equor<ex>um</ex></expan></reg>
+                    </choice></w>
+                    . Aut 
+                    <w><choice>
+                        <orig><abbr>sapientissi<am>ꝳ<g ref="#mus"/></am></abbr></orig>
+                        <reg><expan>sapientissi<ex>mus</ex></expan></reg>
+                    </choice></w>
+                    homo nisi
+                    
+                    <lb n="19"/> hominũ<g ref="#ũ=um"/>. <g ref="#=et"/> similia siue singularis plurali comparat<g ref="# =ur"/>  ut ea quae dic
+                    <lb n="20"/> ta ȓ<g ref="#ȓ=sunt"/> siue utꝵ<g ref="#ꝵ=rum"/>q᛬<g ref="#q᛬=que"/> plurale sit Ut fortissimi homines hominũ<g ref="#ũ=um"/> . Aliqdo
+                    
+                  
+                </p>
+            </div> </body></text>
+</TEI>

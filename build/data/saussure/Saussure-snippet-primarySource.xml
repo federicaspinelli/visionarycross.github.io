@@ -1,0 +1,118 @@
+<TEI>
+    <sourceDoc>
+        <surface>
+            <zone type="pagination">
+                <fw type="pageNum" hand="#h1">70</fw>
+            </zone>
+
+            <zone type="Identifier">
+                <fw type="sig" hand="#h2">MS fr. 3955/1</fw>
+            </zone>
+
+            <zone type="mainText">
+                <line>directement soumis à notre analyse. On peut changer</line> 
+<line>tous les r uvulaires d’une langue en r dentals, tous ses</line> 
+<line>
+    <mod>
+        <del rend="strikethrough"><unclear>θ</unclear> en <unclear>t</unclear></del>
+        <add place="margin inline">θ en t et</add>
+    </mod>
+    ainsi de suite, et on n’aura pas changé l’état</line> 
+<line>réciproque des termes <add change="#ch1"><metamark function="displacement" xml:id="ch1-0001.01">X</metamark></add>  , pourvu seulement que le changement</line> 
+<line>de la valeur absolue n’entraîne aucune perturbation dans</line> 
+<line>les valeurs relatives, en amenant par exemple la confusion (partielle</line> 
+<line>ou totale) de deux éléments en un seul élément.</line>
+            </zone>
+
+qui constitue la langue
+
+    <mod>
+        <del rend="strikethrough"><unclear>θ</unclear> en <unclear>t</unclear></del>
+        <add place="margin inline">θ en t et</add>
+      </mod>
+
+
+
+        </surface>
+    </sourceDoc>
+
+
+
+
+La 
+valeur absolue des différents éléments est une chose non-seulement 
+indifférente dans le travail de reconstruction 
+mais même, osons-nous affirmer, remarquablement 
+indifférente dans un état de langue quelconque 
+ 
+directement soumis à notre analyse.
+
+
+
+On peut changer 
+tous les r uvulaires d’une langue en r dentals, tous ses 
+θ en t et ainsi de suite, et on n’aura pas changé l’état 
+réciproque des termes qui constitue la langue, pourvu seulement que le changement 
+de la valeur absolue n’entraîne aucune perturbation dans 
+les valeurs relatives, en amenant par exemple la confusion (partielle 
+ou totale) de deux éléments en un seul élément.
+
+
+Je vais essayer, selon mes lumières, de l’indiquer:
+
+1° Pour la succession des faits, si c’est cela qu’on considère depuis le moment 
+où on avait km̥tom ou kemtom, cela est complètement 
+indifférent. -----
+
+<surface>	graphic	 "xxx"
+partOf	"xxx"
+<zone>	type	"main" "left_margin" "library" "top" "pagination"
+rotate	"90" "180" "270"
+corresp	"#xxx"
+rend	"bordered"
+<line>	rend	"center" "right" "left" "indent1" "indent2" "indent3" "indent4" "indent5"
+xml:id	"xxx"
+<del>	rend	"strikethrough" "smear" "vertical_line" "overwritten"   "unmarked" "erased"
+instant	"true" "false"
+next	"#xxx"
+<delSpan/>	spanTo	"#xxx"
+rend	"strikethrough" "vertical_line"
+<add>	place	"superlinear" "sublinear" "intralinear" "interlinear"
+hand	"#pbs" "#mws"  "#mw" "#wg" "#comp" "#library"
+next	"#xxx"
+xml:id	"xxx"
+type	"alternative"
+<addSpan/>	place	"interlinear" "superlinear" "sublinear"
+spanTo	"#xxx"
+hand	"#pbs" "#mws" "#mw" "#wg" "#comp" "#library"
+xml:id	"xxx"
+<mod>	type	"addition" "substitution" "restore" "overwrite"
+<mod/>	type	"addition" "substitution" "restore" "overwrite"
+spanTo	"#xxx"
+<retrace>	cause	"clarify" "fix"
+hand	"#pbs" "#mws" "#comp" "#mw" "#wg"
+<restore>	type	"stetdots" "smear_strikethrough" "underline"
+<handShift/>	new	"#pbs" "#mws" "#mw" "#wg" "#comp" "#library"
+medium	"pen" "pencil"
+<metamark>	function	"count" "insert" "separate" "paragraph" "transpose" "sequence" "displacement"
+<anchor/>	xml:id	"xxx"
+<ptr/>	target	"#xxx"
+<milestone/>	unit	"tei:p" "tei:note" "tei:speaker" "tei:act" "tei:scene" "tei:stage" "tei:poem""tei:l" "tei:lg" "tei:canto" "tei:stanza" "tei:date""tei:salute" "tei:head"
+spanTo	"#xxx"
+<hi>	rend	"sup" "underline"
+<unclear>
+<unclear/>	reason	"illegible" "case"
+unit	"chars"
+extent	"xx"
+<space/>	unit	"chars"
+extent	"xx"
+<damage>
+<damageSpan/>	type	"inkblot" "tear" "cut"
+<alt/>	targets	"#xxx #xxx"
+mode	"exclusive"
+weights	"0.5 0.5"
+<listTranspose>
+<transpose>	 	 
+<figDesc>
+<figure>	 	 
+</TEI>

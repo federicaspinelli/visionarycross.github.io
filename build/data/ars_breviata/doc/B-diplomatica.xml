@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI
+  xmlns="http://www.tei-c.org/ns/1.0"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns:svg="http://www.w3.org/2000/svg"
+  xmlns:math="http://www.w3.org/1998/Math/MathML">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Ars breviata</title>
+                <author>S. Agostino</author>
+                <respStmt>
+                    <resp>Edited by</resp>
+                    <name ></name>
+                </respStmt>
+                <respStmt>
+                    <resp>Text Encoding by</resp>
+                    <name></name>
+                </respStmt>
+                <respStmt>
+                    <resp>Changes for EVT testing purposes by</resp>
+                    <name ></name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <p></p>
+            </publicationStmt>
+            <notesStmt>
+                <note>
+                </note>
+            </notesStmt>
+            <sourceDesc>
+                <listWit>
+                    <witness xml:id="B">
+                        <!-- inserire dati ms. -->
+                    </witness>
+                </listWit>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <variantEncoding method="parallel-segmentation" location="internal" />
+            <tagsDecl>
+            </tagsDecl>
+        </encodingDesc>
+    </teiHeader>
+    <text xml:id="B_text_dipl">
+
+        <!--BEGINNING OF BODY-->
+        <body>
+            <p>
+                <pb facs="data/images/single/fol_214v_big.jpg" n="9r"/> 	
+                
+                <fw type="fol" place="top-right"><add hand="">9</add></fw>
+                
+                <lb n="1"/> <milestone unit="cap" n="1"/><milestone unit="par" n="1"/>
+                INCIPIT · ARS · SI · A<add place="above">V</add>GUSTINI · PRO FRATRUM · MEDIOCRITATE · BREVIATA
+                <lb n="2"/>  Latinitas ē<g ref="#ē=est"/> obseruatio in<g ref="#=ter"/>rupte loquendi scđm romanã<g ref="#ã=am"/> linguã<g ref="#ã=am"/> · Constat autẽ<g ref="#ẽ=em"/> modis trib<g ref="#=us"/> Id ē<g ref="#ē=est"/> ratione ·
+                <lb n="3"/>  auctoritate · consu<g ref="#=et"/>udine · Ratione scđm artem· auctoritate scđm eorũ<g ref="#ũ=um"/> scripta quib<g ref="#=us"/> ipsa ∻<g ref="#∻=est"/> auctoritas · <w>adtribu<lb/>
+                    <lb n="4"/> ta</w>· Consu<g ref="#=et"/>udine secundũ<g ref="#ũ=um"/> ea quae loquendi usu placita adsũ<g ref="#ũ=um"/>ptaq<g ref="#=ue"/> ȓ<g ref="#ȓ=sunt"/>·<milestone unit="cap" n="2"/> <milestone unit="par" n="2"/> DE PARTIBUS ORATIONIS· 
+                <lb n="5"/>  Partes orationis ȓ<g ref="#ȓ=sunt"/> octo · No<g ref="#=men"/> · Prono<g ref="#=men"/> · Verbum · Aduerbiũ<g ref="#ũ=um"/> · Patricipiũ<g ref="#ũ=um"/> · Coniunctio · Prepositio · In<g ref="#=ter"/>iectio;
+            <lb n="6"/><milestone unit="cap" n="3"/> <milestone unit="par" n="3"/> 
+            No<g ref="#=men"/> ∻<g ref="#∻=est"/> pars orationis casu tere significans pleneq aliquo genere quo de sexum adten<g ref="#=et"/> enunciator · Quã<g ref="#ã=am"/>quã<g ref="#ã=am"/>
+            <lb n="7"/>  enĩ<g ref="#ĩ=im"/> gen<g ref="#=us"/> neutrũ<g ref="#ũ=um"/> nec masculinũ<g ref="#ũ=um"/> nec femininũ<g ref="#ũ=um"/> sit ta<g ref="#=men"/> quia negotio utroq<g ref="#=ue"/> sexus signatur ex eo ipso hab<g ref="#=et"/> causam
+            <lb n="8"/> ut in<g ref="#=ter"/> genera nominar<g ref="#=et"/>t<g ref="# =ur"/>  · Nomini accedu<g ref="#nt iunctae"/> multa sed anĩ<g ref="#ĩ=im"/>ad<g ref="#=ver"/>sione maxime digna ȓ<g ref="#ȓ=sunt"/>· qualitas· gen<g ref="#=us"/> ·numer<g ref="#=us"/>· cõparatio·
+            <lb n="9"/> figura· casus· <milestone unit="par" n="4"/> In <g ref="#q cum a suprascripta=qua"/>litate c̄<g ref="# c̄=con"/>siderat<g ref="# =ur"/>  utrũ<g ref="#ũ=um"/> sit propriæ an appellatiuũ<g ref="#ũ=um"/>¬· Ꝓpriũ<g ref="#ũ=um"/> ∻<g ref="#∻=est"/> q que res a c<g ref="#=et"/>erarũ<g ref="#ũ=um"/> omniũ<g ref="#ũ=um"/> quaũ<g ref="#ũ=um"/> potest cõ
+            <lb n="10"/> mune secernitur appellatiuũ<g ref="#ũ=um"/>  cõmune cũ<g ref="#ũ=um"/> multis ∻<g ref="#∻=est"/> Nã<g ref="#ã=am"/> ciuitas multarũ<g ref="#ũ=um"/> ciuitatũ<g ref="#ũ=um"/> cõmune no<g ref="#=men"/> ∻<g ref="#∻=est"/> <g ref="#=et"/> ideo appellatiũ<g ref="#ũ=um"/> ∻<g ref="#∻=est"/>
+            <lb n="11"/> Roma uero cũ<g ref="#ũ=um"/> ds a c<g ref="#=et"/>erarũ<g ref="#ũ=um"/> eã<g ref="#ã=am"/> cõmune seiungim<g ref="#=us"/> Itaq<g ref="#=ue"/> hoc no<sic>m</sic> ꝓ<g ref="#ꝓ=pro"/><g ref="#=pri"/>ũ<g ref="#ũ=um"/> ∻<g ref="#∻=est"/> sic <g ref="#=et"/> fluuius appellatiuũ<g ref="#ũ=um"/> tiberis ꝓ<g ref="#ꝓ=pro"/><g ref="#=pri"/>ũ<g ref="#ũ=um"/> <g ref="#=et"/> homo ap
+            <lb n="12"/> pellatiuũ<g ref="#ũ=um"/> cicero ꝓ<g ref="#ꝓ=pro"/><g ref="#=pri"/>ũ<g ref="#ũ=um"/> <milestone unit="par" n="5"/> genera nominũ<g ref="#ũ=um"/> simplicia tria ȓ<g ref="#ȓ=sunt"/>· maꞅ ut uir· fenũ<g ref="#ũ=um"/> ut mulier· Neu<g ref="#=trum"/> ut scriniũ<g ref="#ũ=um"/> ex his uariæ 
+            <lb n="13"/> c̄<g ref="# c̄=con"/>iunctis fiu<g ref="#nt iunctae"/>· Alia tria cõmune utriusq<g ref="#=ue"/> sexus ut hic <g ref="#=et"/> <g ref="#=haec"/> homo · cõmune ex mascno <g ref="#=et"/> neutro· ut hic <g ref="#=et"/> hoc uictor · ds 
+            <lb n="14"/> enim uictor I<sic>n</sic>uenis uictor nu<g ref="#=men"/> feminino enĩ<g ref="#ĩ=im"/> uictrix fać commune omniũ<g ref="#ũ=um"/> gnŕm hic <g ref="#=et"/> <g ref="#=haec"/> <g ref="#=et"/> hoc felix dr · Quedã<g ref="#ã=am"/> <g ref="#=et"/>iã<g ref="#ã=am"/> pro
+            <lb n="15"/> miscua qnđ uno gnŕe u<g ref="#=ter"/>q᛬<g ref="#q᛬=que"/> sexus includit<g ref="# =ur"/>  Nam hic passer dŕ siue masculus siue sit femina <g ref="#=et"/> <g ref="#=haec"/> aquila si <g ref="#=non"/> sit femina
+            <lb n="16"/> <g ref="#=sed"/> ideo <g ref="#=non"/> adnumerant<g ref="# =ur"/>   q‹<g ref="#q‹=quia"/> ꝟ<g ref="#l cum linea obliqua=vel"/> masculino ꝟ<g ref="#l cum linea obliqua=vel"/>  generi adtributa ȓ<g ref="#ȓ=sunt"/> · <milestone unit="par" n="6"/> Numeri ȓ<g ref="#ȓ=sunt"/> duo singrs ut hic uir· Plurs ut hi
+            <lb n="17"/> uiri· <milestone unit="par" n="7"/> Cõparationis gradus tres ȓ<g ref="#ȓ=sunt"/> · Positiuus ut iustus · cõparatiuus ut iustior · suꝑ<g ref="#ꝑ=per"/>latiuus ut iustissim<g ref="#=us"/> · <g ref="#=pr(a)e"/>positiuũ<g ref="#ũ=um"/> fit 
+            <lb n="18"/> comparatiuo ut 𐌴qualitas quedã<g ref="#ã=am"/> ostendatur tã<g ref="#ã=am"/> ē<g ref="#ē=est"/> · hic iustus qua mille <g ref="#=et"/> ideo nominatiuũ<g ref="#ũ=um"/> casũ<g ref="#ũ=um"/> regit. In cõpara
+            <lb n="19"/> tiuo au<g ref="#=tem"/> <g ref="#=et"/> suꝑ<g ref="#ꝑ=per"/>latiuo non · ē<g ref="#ē=est"/> · æqualitas si alius alii <g ref="#=pr(a)e"/>ponit<g ref="# =ur"/>  Ita ta<g ref="#=men"/> ut cõparatiuus· ablatiuũ<g ref="#ũ=um"/> casum regat· Aliqnđ
+            <lb n="20"/> <g ref="#h cum puncto laterale=autem"/> genitiuũ<g ref="#ũ=um"/> plrḿ regit ut cum d<g ref="#=et"/>rib<g ref="#=us"/> epꞅ interrogam<g ref="#=us"/> quos illorũ<g ref="#ũ=um"/> prior ∻<g ref="#∻=est"/> unũ<g ref="#ũ=um"/> de ipsis trib<g ref="#=us"/> priorũ<g ref="#ũ=um"/> uolentes cognoscere 
+            <lb n="21"/> si <g ref="#h cum puncto laterale=autem"/> dicam<g ref="#=us"/> quos illis prior ∻<g ref="#∻=est"/> nescioquã<g ref="#ã=am"/> ꝑ<g ref="#ꝑ=per"/>sonam quartam uid<g ref="#=et"/><g ref="# =ur"/> inquirere qu𐌴 illis trib<g ref="#=us"/> prior ∻<g ref="#∻=est"/> Unde <g ref="#=et"/>iã<g ref="#ã=am"/> paulus aps 
+            <lb n="22"/> cũ<g ref="#ũ=um"/> dicer<g ref="#=et"/> · man<g ref="#=et"/> autẽ<g ref="#ẽ=em"/> fides spes · caritas · tria haec qũ caritas in<g ref="#=ter"/> tria Iã<g ref="#ã=am"/> numerata ∻<g ref="#∻=est"/> diẍ<g ref="#x cum linea=xit"/> maior au<g ref="#=tem"/> horũ<g ref="#ũ=um"/>
+            <lb n="23"/> caritas· Nã<g ref="#ã=am"/> si dicer<g ref="#=et"/> maior au<g ref="#=tem"/> his caritas · Aliã<g ref="#ã=am"/> caritatẽ<g ref="#ẽ=em"/> quasi quartũ<g ref="#ũ=um"/> aliquid inducere uider<g ref="#=et"/>t<g ref="# =ur"/>  q trib<g ref="#=us"/> dinu
+            <lb n="24"/> meratis id est fidei <g ref="#=et"/> spei · <g ref="#=et"/> caritati <g ref="#=pr(a)e"/>poner<g ref="#=et"/> cui<g ref="#=us"/> rationis min<g ref="#=us"/> capaces quidã<g ref="#ã=am"/> in aliquantis codicib<g ref="#=us"/> e<g ref="#=men"/>daueŕ<g ref="#ŕ=runt"/>
+            <lb n="25"/> maior <g ref="#h cum puncto laterale=autem"/> his ∻<g ref="#∻=est"/> caritas· ut cũ<g ref="#ũ=um"/> ds iustior hic illo <g ref="#=et"/> nominatiuũ<g ref="#ũ=um"/> ut cũ<g ref="#ũ=um"/> ds iustior hic quã<g ref="#ã=am"/> ille· Deinde <g ref="#=non"/> solũ<g ref="#ũ=um"/> suo gri 
+            <lb n="26"/> uelut uelocior homo homine <g ref="#=sed"/> alieno <g ref="#=et"/>iã<g ref="#ã=am"/> cõparat<g ref="# =ur"/>  ut uelocior lep<g ref="#=us"/> homine <g ref="#=et"/> singularis plurali ut hic fortior ∻<g ref="#∻=est"/>
+            <lb n="27"/> illis· aut fortior est· quã<g ref="#ã=am"/> ille <g ref="#=et"/> plurs singulari· ut hii fortiores· illo uꝟ<g ref="#l cum linea obliqua=vel"/> quã<g ref="#ã=am"/> ille suꝑ<g ref="#ꝑ=per"/>latiuus uero· <g ref="#=et"/> tantũ<g ref="#ũ=um"/>modo suo gri
+            <lb n="28"/> conparat<g ref="# =ur"/>  <g ref="#=et"/> non nisi ꝑ<g ref="#ꝑ=per"/> gen<g ref="#=et"/>iuũ<g ref="#ũ=um"/> · pluralẽ<g ref="#ẽ=em"/> · non enĩ<g ref="#ĩ=im"/> possumum<g ref="#=us"/> dicere uelocissimus. equus nisi equorũ<g ref="#ũ=um"/>· aut sapientissim<g ref="#=us"/> homo
+            <lb n="29"/> nisi hominũ<g ref="#ũ=um"/> <g ref="#=et"/> similia siue singularis plurali conparatur ut ea <g ref="=quae"/> dicta ȓ<g ref="#ȓ=sunt"/>. siue utrumq<g ref="#=ue"/> plurale sit ut fortissime homi
+            <lb n="30"/> nes hominũ<g ref="#ũ=um"/> aliquando <g ref="#=et"/>iã<g ref="#ã=am"/> gen<g ref="#=et"/>iuũ<g ref="#ũ=um"/> singularem sequit<g ref="# =ur"/>  cũ<g ref="#ũ=um"/> idem gen<g ref="#=et"/>iuus sono quid ∻<g ref="#∻=est"/> singularis intellectu au<g ref="#=tem"/> plura
+            <lb n="31"/>  lis ∻<g ref="#∻=est"/> ut cũ<g ref="#ũ=um"/> ds fortissim<g ref="#=us"/> gentis illius · Unde <g ref="#=et"/>iã<g ref="#ã=am"/> ille diẍ<g ref="#x cum linea=xit"/> o danaũ<g ref="#ũ=um"/> fortissime gentis tydide <milestone unit="par" n="8"/> figura nominũ<g ref="#ũ=um"/> ∻<g ref="#∻=est"/> ꝑ<g ref="#ꝑ=per"/> quẽ<g ref="#ẽ=em"/> consi
+            <lb n="32"/> deratur utrum simplex· An cõpositũ<g ref="#ũ=um"/> no<g ref="#=men"/> sit ē<g ref="#ē=est"/> au<g ref="#=tem"/> compositũ<g ref="#ũ=um"/> no<g ref="#=men"/> cum fit unũ<g ref="#ũ=um"/> ex duab<g ref="#=us"/> uꝟ<g ref="#l cum linea obliqua=vel"/> plurib<g ref="#=us"/> partib<g ref="#=us"/> orati
+            <lb n="33"/> onis · ut cũ<g ref="#ũ=um"/> ds ineptus uꝟ<g ref="#l cum linea obliqua=vel"/> inexpugnabilis Nam illud de duab<g ref="#=us"/> hoc ex trib<g ref="#=us"/> partib<g ref="#=us"/> orationis confectũ<g ref="#ũ=um"/> ∻<g ref="#∻=est"/> sana par
+            <lb n="34"/> ticul𐌴 quib<g ref="#=us"/> noā conponu<g ref="# =ur"/> aut integr𐌴 ȓ<g ref="#ȓ=sunt"/> os aut corrupt𐌴 os aut partim integr𐌴 partim corrupt𐌴 · Corrup
+            <lb n="35"/> tus dico qnđ ꝑ<g ref="#ꝑ=per"/> ipsã<g ref="#ã=am"/> compositionẽ<g ref="#ẽ=em"/> · Integritatẽ<g ref="#ẽ=em"/> amittunt Nec ex eo ta<g ref="#=men"/> minus latinũ<g ref="#ũ=um"/> no<g ref="#=men"/> offiuciu<g ref="#nt iunctae"/>· Nã<g ref="#ã=am"/> cũ<g ref="#ũ=um"/> inept<g ref="#=us"/> 
+            <lb n="36"/> dŕ in utiq᛬<g ref="#q᛬=que"/> latinũ<g ref="#ũ=um"/> · ē<g ref="#ē=est"/> · <g ref="#=et"/> ta<g ref="#=men"/> ept<g ref="#=us"/> latinũ<g ref="#ũ=um"/> <g ref="#=non"/> ∻<g ref="#∻=est"/> ex eo enĩ<g ref="#ĩ=im"/> q ∻<g ref="#∻=est"/> aptus corrupt<g ref="#=us"/> ∻<g ref="#∻=est"/> si quis itaq᛬<g ref="#q᛬=que"/> <g ref="#=non"/>  dicer<g ref="#=et"/> ineptus <g ref="#=sed"/> inaptus eo
+            <lb n="37"/> min<g ref="#=us"/> latinũ<g ref="#ũ=um"/> no<g ref="#=men"/> eēt qua corruptũ<g ref="#ũ=um"/> nihil haber<g ref="#=et"/> <milestone unit="par" n="9"/> casus ē<g ref="#ē=est"/> gradus dã<g ref="#ã=am"/> declinationis mutatione nouissim𐌴
+            <lb n="38"/> syllab𐌴 · Casus <g ref="#=sed"/> sex Nominatiuus · gen<g ref="#=et"/>tiuus · dt · Acc̄s · uoćs · Ablatiuus · Nominatiuus ∻<g ref="#∻=est"/> cui <g ref="#=pr(a)e"/>poni
+            <lb n="39"/> pot∻<g ref="#∻=est"/> hic aut haec aut ho· Gen<g ref="#=et"/>tiuus cui <g ref="#=pr(a)e"/>poni pot∻<g ref="#∻=est"/> hui<g ref="#=us"/> · Dt cui <g ref="#=pr(a)e"/>poni pot∻<g ref="#∻=est"/> huic · Abs cui <g ref="#=pr(a)e"/>poni pot∻<g ref="#∻=est"/> ab <g ref="#h cum puncto supra=hoc"/>  
+            <pb n="9v"/>
+            <lb n="1"/>  uel ab hac uel ab hoc hoc au<g ref="#=tem"/> in numero singulari · Nam in plurali hii <g ref="#=et"/> hae <g ref="#=et"/> haec In nominatiuo <g ref="#=pr(a)e"/>ponit<g ref="# =ur"/>   geto
+            <lb n="2"/>  horũ<g ref="#ũ=um"/> <g ref="#=et"/> harũ<g ref="#ũ=um"/> <g ref="#=et"/> horũ<g ref="#ũ=um"/> · Datiuus his · acc̄s hos ꝟ<g ref="#l cum linea obliqua=vel"/> has ꝟ<g ref="#l cum linea obliqua=vel"/> haec · Uoćs ·o Abs ab his ȓ<g ref="#ȓ=sunt"/> que aliũ<g ref="#ũ=um"/> casũ<g ref="#ũ=um"/> uelint adiungere
+            <lb n="3"/>  quẽ<g ref="#ẽ=em"/> septimũ<g ref="#ũ=um"/> uoca<g ref="#nt iunctae"/> ut cũ<g ref="#ũ=um"/> ds uirtute beatus · <g ref="#=et"/> naui uectus id ∻<g ref="#∻=est"/> ꝑ<g ref="#ꝑ=per"/> uirtutẽ<g ref="#ẽ=em"/> <g ref="#=et"/> ꝑ<g ref="#ꝑ=per"/> nauẽ<g ref="#ẽ=em"/> <g ref="#=et"/> similia · <milestone unit="par" n="10"/> Ergo noā <g ref="#h cum puncto supra=hoc"/> modo decli
+            <lb n="4"/> naur Tullius no<g ref="#=men"/> ꝓ<g ref="#ꝓ=pro"/>priũ<g ref="#ũ=um"/> gers masculini · numṙ singulari · figur𐌴 simplicis casus noḿt q declinabit<g ref="# =ur"/>  sic ·
+            <lb n="5"/> Nominatiuo singulari hic tullius · get hui<g ref="#=us"/> tulli · dt huic tullio · Accusatiuus hunc tulliũ<g ref="#ũ=um"/> · Uoćs o tulli · Abs
+            <lb n="6"/> ab hoc tullio · <g ref="#=et"/> pr noḿt hii tullii · get horũ<g ref="#ũ=um"/> tulliorũ<g ref="#ũ=um"/> · Dt his tullius · Accusatiuus · hos tullios · Uoć
+            <lb n="7"/> o tulli · Abs ab his tulliis · <milestone unit="par" n="11"/> Femininũ<g ref="#ũ=um"/> <g ref="#h cum puncto supra=hoc"/> modo tullia no<g ref="#=men"/> ꝓ<g ref="#ꝓ=pro"/>priũ<g ref="#ũ=um"/> genŕ femininũ<g ref="#ũ=um"/> numṙ sing fiḡ sim cas<g ref="#=us"/> noḿt
+            <lb n="8"/> <g ref="#=et"/> uoc q declinabit<g ref="# =ur"/>  sic · Noḿt singr haec tullia · get hȓ tulliae · Dt huic tulliæ ·  Acc̄s hanc tulliã<g ref="#ã=am"/> · uoć
+            <lb n="9"/> o tullia · Abs ab hac tullia · <g ref="#=et"/> pr noḿt h𐌴 tulliae · Get harũ<g ref="#ũ=um"/> tulliorũ<g ref="#ũ=um"/> Datiū his tulliis · Acc̄s has tulli
+            <lb n="10"/> as· Uoć o tulliae · Ab ab his tulliis · <milestone unit="par" n="12"/> Neu<g ref="#=trum"/> <g ref="#h cum puncto supra=hoc"/> modo scriniũ<g ref="#ũ=um"/> no<g ref="#=men"/> appellatiuũ<g ref="#ũ=um"/> gers neutri numṙ sing
+            <lb n="11"/> figur𐌴 simp casus noḿt : <add place="above">:Acć</add>  <g ref="#=et"/> uoc · q declinabit<g ref="# =ur"/>  sic hoc scriniũ<g ref="#ũ=um"/> · hȓ scrinii · huic scrinio · o scriniũ<g ref="#ũ=um"/> ab hoc scrinio· 
+            <lb n="12"/> pr haec scrinia horum scriniorũ<g ref="#ũ=um"/> hi scriniis <g ref="#=haec"/> scrinia ab his scriniis 
+            
+            
+        </p>
+
+         </body>
+        <!--END OF BODY-->
+
+        
+
+    </text>
+    <!--END OF TEXT-->
+
+<!--END OF DOCUMENT-->
+</TEI>
