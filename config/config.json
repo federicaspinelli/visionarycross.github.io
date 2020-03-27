@@ -217,7 +217,7 @@
 
    "tdhopViewerOptions": {
       "name": "Bewcastle",
-      "url": "data/models/multires/bewcastrle.nxz",
+      "url": "data/models/multires/bewcastle.nxz",
       "mesh": "Bewcastle",
 
       "toolHome": true,
