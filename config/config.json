@@ -217,7 +217,7 @@
 
    "tdhopViewerOptions": {
       "name": "Bewcastle",
-      "url": "data/models/singleres/laurana.ply",
+      "url": "data/models/multires/bewcastrle.nxz",
       "mesh": "Bewcastle",
 
       "toolHome": true,
