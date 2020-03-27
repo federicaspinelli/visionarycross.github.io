@@ -217,10 +217,10 @@
 
    "tdhopViewerOptions": {
       "name": "Bewcastle",
-      "url": "data/3Dmodels/multires/bewcastle.nxz",
+      "url": "data/3Dmodels/multires/gargo.nxz",
       "mesh": "Bewcastle",
 
-      "toolHome": false,
+      "toolHome": true,
       "toolZoomin": true,
       "toolZoomout": true,
       "toolLighting": true,
