@@ -3,12 +3,14 @@
    "webSite": "",
    "logoUrl": "",
 
-   "dataUrl": "data/DOTR.xml",
+   "dataUrl": "data/VB-DOTR.xml",
    "sourcesUrl"       : "",
    "analoguesUrl"     : "",
    "sourcesTextsUrl" : "",
 
    "singleImagesUrl": "data/images/single/",
+   "enableXMLdownload": true,
+   
    "visCollTextUrl": "",
    "visCollStyleUrl": "",
    "visCollSvg": "",
