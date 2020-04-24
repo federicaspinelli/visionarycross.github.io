@@ -217,7 +217,7 @@
 
    "tdhopViewerOptions": {
       "name": "Bewcastle",
-      "url": "data/models/singleres/cross.ply",
+      "url": "https://caedmon5.github.io/Projects/docs/3DHop/index_all_tools.html",
       "mesh": "Bewcastle",
 
       "toolHome": true,
