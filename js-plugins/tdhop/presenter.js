@@ -597,7 +597,7 @@ _createUtilsProgram : function () {
 	");
 	if(this._isDebugging)
 		console.log("UTILS Vertex Shader Log:\n" + utilsVertexShader.log);
-	
+
 	var utilsFragmentShader = new SglFragmentShader(gl, "\
 		precision highp float;													\n\
 																				\n\
@@ -1518,7 +1518,7 @@ _drawScene : function () {
 	gl.clearColor(bkg[0], bkg[1], bkg[2], bkg[3]);
 	gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT | gl.STENCIL_BUFFER_BIT);
 	gl.enable(gl.DEPTH_TEST);
-	
+
 	// draw non-transparent geometries
 	for (var inst in instances) {
 		var instance = instances[inst];
@@ -1794,11 +1794,11 @@ _drawScene : function () {
 	// draw entities
 	for (var ent in entities) {
 		var entity = entities[ent];
-		
+
 		var entityUniforms = {
 			"uWorldViewProjectionMatrix" : xform.modelViewProjectionMatrix,
-		};		
-		
+		};
+
 		//drawing lines
 		renderer.begin();
 			renderer.setTechnique(entitiesTechnique);
@@ -2016,14 +2016,14 @@ _drawScene : function () {
 		gl.depthMask(true);
 	}
 	Nexus.endFrame(this.ui.gl);
-	
+
 	// saving image, if necessary
 	if(this.isCapturingScreenshot){
 	    this.isCapturingScreenshot = false;
 		this.screenshotData = this.ui._canvas.toDataURL('image/png',1);
 		if(this._scene.config.autoSaveScreenshot)
 		{
-			var currentdate = new Date();			
+			var currentdate = new Date();
 			var a  = document.createElement('a');
 			a.href = this.screenshotData;
 			a.download = this._scene.config.screenshotBaseName + currentdate.getHours() + currentdate.getMinutes() + currentdate.getSeconds() + ".png";
@@ -2506,7 +2506,6 @@ onInitialize : function () {
 	// screenshot support
 	this.isCapturingScreenshot = false;
 	this.screenshotData = null;
-	
 	// nexus parameters
 	this._nexusTargetFps   = 15.0;
 	this._nexusTargetError = 1.0;
@@ -2601,7 +2600,7 @@ installDefaultShaders : function () {
 
 	this.faceTechnique = this._createStandardFacesTechnique();
 	this.pointTechnique = this._createStandardPointsTechnique();
-	this.utilsTechnique = this._createUtilsTechnique();	
+	this.utilsTechnique = this._createUtilsTechnique();
 	this.colorShadedTechnique = this._createColorShadedTechnique();
 
 	this.simpleLineTechnique = this._createSimpleLinetechnique();
@@ -2622,7 +2621,6 @@ onDrag : function (button, x, y, e) {
 
 	// if locked trackball, just return. we check AFTER the light-trackball test
 	if (this._scene.trackball.locked) return;
-	
 	if(ui.dragDeltaX(button) != 0) this.x += (ui.cursorDeltaX/500);
 	if(ui.dragDeltaY(button) != 0) this.y += (ui.cursorDeltaY/500);
 
@@ -2748,7 +2746,6 @@ onMouseWheel: function (wheelDelta, x, y, e) {
 	else {
 		// if locked trackball, just return.
 		if (this._scene.trackball.locked) return;
-		
 		var action = SGL_TRACKBALL_SCALE;
 
 		var factor = wheelDelta > 0.0 ? (0.90) : (1.10);
@@ -2851,7 +2848,7 @@ setScene : function (options) {
 		if(mesh.mType == null)
 		{
 			var ext = mesh.url.split('.').pop().split(/\#|\?/)[0].toLowerCase();
-			if((ext === "nxs") || (ext === "nxz")) 
+			if((ext === "nxs") || (ext === "nxz"))
 				mesh.mType = "nexus";
 			else if(ext === "ply")
 				mesh.mType = "ply";
@@ -2932,25 +2929,25 @@ createPolylineEntity : function (mName, pointList) {
 	nEntity.renderable = null;
 	nEntity.transform = {};
 	nEntity.transform.matrix = SglMat4.identity();
-		
+
 	var modelDescriptor = {};
 	modelDescriptor.primitives = ["lines","points"];
 	modelDescriptor.vertices = {};
 	modelDescriptor.vertices.position = [];
 	modelDescriptor.vertices.normal = [];
 	modelDescriptor.vertices.color = {value : [ 1.0, 1.0, 0.0, 1.0 ]};
-	var numVerts = pointList.length;	
-	
+	var numVerts = pointList.length;
+
 	for (vInd = 0; vInd < numVerts; vInd++)
 	{
 		modelDescriptor.vertices.position.push(pointList[vInd][0]);
 		modelDescriptor.vertices.position.push(pointList[vInd][1]);
 		modelDescriptor.vertices.position.push(pointList[vInd][2]);
-		
+
 		modelDescriptor.vertices.normal.push(0.0);
 		modelDescriptor.vertices.normal.push(1.0);
 		modelDescriptor.vertices.normal.push(0.0);
-		
+
 		/*
 		modelDescriptor.vertices.color.push(1.0 * (vInd % 2));
 		modelDescriptor.vertices.color.push(0.0);
@@ -2961,10 +2958,10 @@ createPolylineEntity : function (mName, pointList) {
 
 	var gl = this.ui.gl;
 	nEntity.renderable = new SglModel(gl, modelDescriptor);
-	
+
 	// setting
 	this._scene.entities[mName] = {};
-	this._scene.entities[mName] = nEntity;		
+	this._scene.entities[mName] = nEntity;
 },
 
 //-----------------------------------------------------------------------------

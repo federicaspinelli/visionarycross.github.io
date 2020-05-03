@@ -296,7 +296,7 @@ Mesh.prototype = {
 			0,
 			88,
 			function() {
-				console.log("Loading header for " + mesh.url);
+//				console.log("Loading header for " + mesh.url);
 				var view = new DataView(this.response);
 				view.offset = 0;
 				mesh.reqAttempt++;

@@ -79,7 +79,7 @@ function init3dhop() {
 			$('#toolbar img').css("opacity","0.5");
 		});
 
-	$('#3dhop:not(#draw-canvas)').on('contextmenu', function(e) { return false; });
+	$('#tdhop:not(#draw-canvas)').on('contextmenu', function(e) { return false; });
 
 	$('#draw-canvas')
 		.on('contextmenu', function(e) {
@@ -114,11 +114,11 @@ function init3dhop() {
 			height = window.innerHeight;
 		}
 		else {
-			width = $('#3dhop').parent().width();
-			height = $('#3dhop').parent().height();
+			width = $('#tdhop').parent().width();
+			height = $('#tdhop').parent().height();
 		}
 
-		resizeCanvas(width,height);
+		//resizeCanvas(width,height);
 
 		presenter.ui.postDrawEvent();
 	});
@@ -129,7 +129,7 @@ function init3dhop() {
 //		window.scrollTo(x, y);
 //	});
 
-	resizeCanvas($('#3dhop').parent().width(),$('#3dhop').parent().height());
+	resizeCanvas($('#tdhop').parent().width(),$('#tdhop').parent().height());
 
 	anchorPanels();
 
@@ -450,7 +450,7 @@ function enterFullscreen() {
 //  presenter._nativeResizable = presenter._resizable;
 //  presenter._resizable = true;
 
-  var viewer = $('#3dhop')[0];
+  var viewer = $('#tdhop')[0];
   if (viewer.msRequestFullscreen) viewer.msRequestFullscreen();
   else if (viewer.mozRequestFullScreen) viewer.mozRequestFullScreen();
   else if (viewer.webkitRequestFullscreen) viewer.webkitRequestFullscreen();
@@ -527,8 +527,8 @@ function moveMeasurebox(r,t) {
 function resizeCanvas(w,h) {
   $('#draw-canvas').attr('width', w);
   $('#draw-canvas').attr('height',h);
-  $('#3dhop').css('width', w);
-  $('#3dhop').css('height', h);
+  $('#tdhop').css('width', w);
+  $('#tdhop').css('height', h);
 
 //  if (!presenter) return;
 

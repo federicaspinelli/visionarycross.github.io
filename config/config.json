@@ -3,14 +3,12 @@
    "webSite": "",
    "logoUrl": "",
 
-   "dataUrl": "data/text/VB-DOTR.xml",
+   "dataUrl": "data/VB-DOTR.xml",
    "sourcesUrl"       : "",
    "analoguesUrl"     : "",
    "sourcesTextsUrl" : "",
 
-   "singleImagesUrl": "data/images/single/",
-   "enableXMLdownload": true,
-   
+   "singleImagesUrl": "",
    "visCollTextUrl": "",
    "visCollStyleUrl": "",
    "visCollSvg": "",
@@ -35,7 +33,7 @@
          "label": "IMAGE_TEXT",
          "icon": "mode-imgTxt",
          "viewMode": "imgTxt",
-         "visible": true
+         "visible": false
       },
       {
          "label": "TEXT_TEXT",
@@ -62,9 +60,9 @@
          "visible"  : true
      }
    ],
+
    "defaultEdition": "diplomatic",
    "showEditionLevelSelector": true,
-
    "availableEditionLevel": [
       {
          "value": "critical",
@@ -86,8 +84,9 @@
       }
    ],
 
-   "initNavBarOpened": true,
+   "showDocumentSelector": true,
    "enableNavBar": false,
+   "initNavBarOpened": true,
 
    "toolPinAppEntries": true,
    "toolImageTextLinking": false,
@@ -125,20 +124,36 @@
       }
    ],
 
-   "toolHeatMap": true,
    "preferredWitness": "",
    "skipWitnesses": "",
+   "maxWitsLoadTogether": 5,
+
+   "witnessesGroups": [],
+
+   "showInlineCriticalApparatus": false,
+   "showInlineSources": false,
+   "showInlineAnalogues": false,
+   "showReadingExponent": true,
+
+   "toolHeatMap": true,
+
+   "versions": [],
 
    "listDef": "<listWit>, <listChange>",
    "versionDef": "<witness>, <change>",
    "fragmentMilestone": "<witStart>, <witEnd>",
    "lacunaMilestone": "<lacunaStart>, <lacunaEnd>",
+   "notSignificantVariant": "<orig>, <sic>, [type=orthographic]",
+   "quoteDef": "<quote>",
+   "analogueDef": "<seg>,<ref[type=parallelPassage]>",
+
    "possibleVariantFilters": "",
    "possibleLemmaFilters": "resp",
-   "notSignificantVariant": "<orig>, <sic>, [type=orthographic]",
-   "maxWitsLoadTogether": 5,
 
-   "showDocumentSelector": false,
+
+   "variantColorLight": "",
+   "variantColorDark": "",
+   "heatmapColor": "",
    "variantColors": {
       "type": {
          "lessicographic": "rgb(108, 145, 207)",
@@ -155,29 +170,6 @@
          "unknown": "rgb(125, 125, 125)"
       }
    },
-   "variantColorLight": "",
-   "variantColorDark": "",
-   "heatmapColor": "",
-   "versions": ["rec2", "rec1", "rec3"],
-   "witnessesGroups": [
-      {
-         "groupName": "Group 1",
-         "witnesses": ["V", "P", "N", "M", "G", "C", "R"]
-      },
-      {
-         "groupName": "Group 2",
-         "witnesses": ["F", "D", "O", "W", "M5mg", "B", "U"]
-      }
-   ],
-
-   "quoteDef": "<quote>",
-   "analogueDef": "<seg>,<ref[type=parallelPassage]>",
-
-   "showReadingExponent": true,
-
-   "showInlineCriticalApparatus": false,
-   "showInlineSources": false,
-   "showInlineAnalogues": false,
 
    "defaultBibliographicStyle": "Chicago",
    "allowedBibliographicStyles": {
@@ -211,25 +203,38 @@
    },
    "imageNormalizationCoefficient": 1265,
 
-   "languages": ["en", "it"],
+   "languages": [
+      "en",
+      "it"],
 
-   "toolHome": false,
+
+   "showObjectSelector": true,
 
    "tdhopViewerOptions": {
-      "name": "Bewcastle",
-      "url": "https://caedmon5.github.io/Projects/docs/3DHop/index_all_tools.html",
-      "mesh": "Bewcastle",
-
-      "toolHome": true,
-      "toolZoomin": true,
-      "toolZoomout": true,
-      "toolLighting": true,
-      "toolLightControl": true,
-      "toolMeasure": true,
-      "toolPickPoint": true,
-      "toolPlaneSections": true,
-      "toolSolidColor": true,
-      "toolCamera": true,
-      "toolFullScreen": true
+      "Model_1": {
+         "name": "Bewcastle",
+         "path": "data/models/multires/bewcastle.nxz",
+         "mesh": "Bewcastle"
+      },
+      "Model_2": {
+         "name": "Ruthwell",
+         "path": "data/models/singleres/cross.ply",
+         "mesh": "Ruthwell"
+      },
+         "toolHome": true,
+         "toolZoomin": true,
+         "toolZoomout": true,
+         "toolLighting": true,
+         "toolLightControl": false,
+         "toolMeasure": true,
+         "toolPickPoint": true,
+         "toolPlaneSections": false,
+         "toolSolidColor": true,
+         "toolCamera": true,
+         "toolHotspot": false,
+         "toolFullScreen": true,
+         "toolSwitchModel": false,
+         "toolArrows": true,
+         "toolLightController":true
    }
 }

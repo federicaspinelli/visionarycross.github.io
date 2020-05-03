@@ -294,7 +294,7 @@
 		"SELECT_UNIT":"Seleziona un'unità",
 		"UNIT": "Unità",
 		"SELECT_UNIT_MSG": "Seleziona un'unità per visualizzare la sua composizione.",
-		"MISSING": "Persa"
+		"MISSING": "Perso"
 	},
 	"PAGES": "Pagine",
 	"AND": "e",
@@ -303,6 +303,6 @@
 	"PUBLISHED_BY": "Pubblicato da",
 
 	"NO_INFO": "Dati mancanti",
-	"missing": "Persa",
+	"missing": "Perso",
 	"notLeaf": "---"
 }
