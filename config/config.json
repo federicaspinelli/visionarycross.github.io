@@ -218,7 +218,7 @@
       },
       "Model_1": {
          "name": "Ruthwell",
-         "path": "https://zenodo.org/record/3348342/files/Small_Lamb_Of_God_North_Ruthwell_Cross.ply",
+         "path": "data/models/singleres/bewcastle.nxz",
          "mesh": "Ruthwell"
       },
          "toolHome": true,
